@@ -1,0 +1,89 @@
+table {
+  font-family: sans-serif;
+}
+
+.element {
+  position: static;
+  width: 74px;
+  height: 74px;
+  padding: 2px;
+}
+
+.element_number{
+  text-align: left;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.element_letter {
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.element_name_mass {
+  text-align: center;
+  font-size: 12px;
+  margin: 0 auto;
+}
+
+.element_classes {
+  text-align: center;
+}
+
+.alkaline-metal {
+  background-color: #960feba1;
+}
+
+.alkaline-earth {
+  background-color: #9370dbba;
+}
+
+.transition-metal {
+  background-color: #71ace3b0;
+}
+
+.basic-metal {
+  background-color: #2aadc1c4;
+}
+
+.semimetal {
+  background-color: #27e97cd1;
+}
+
+.nonmetal {
+  background-color: #fbf02bd9;
+}
+
+.halogen {
+  background-color: #ff9400cf;
+}
+
+.noble-gas {
+  background-color: #d50e19c7;
+}
+
+.lanthanide {
+  background-color: #dd9ba6c7;
+}
+
+.actinide {
+  background-color: #d36e90;
+}
+
+caption {
+  font-weight: bold;
+}
+
+.table_colors {
+  border-collapse: separate;
+  border-spacing: 30px;
+  width: 105px;
+  height: 80px;
+}
+
+.table_colors_text {
+  text-align: center; 
+  font-size: 13px;
+  font-weight: bold;
+}
