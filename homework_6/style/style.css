@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --c-dark: #000000;
+  --c-light: #FFFFFF;
+  --c-main: linear-gradient(to right, #6441a5, #2a0845);
+  --c-accent: #ff8d22;
+  --c-button-color: linear-gradient(to right, #6441a5, #452372);
+  --c-border: #C4C4C4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 54px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+.main-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.main-content__inner {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  width: 100%;
+  gap: 30px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header {
+  background: var(--c-main);
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.page-header__title {
+  color: var(--c-light);
+}
+
+.aside-bar {
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  padding-right: 15px;
+  border-right: 2px solid var(--c-border);
+}
+
+.aside-bar__name:not(last-child) {
+  margin-bottom: 20px;
+}
+
+.aside-bar__list {
+  list-style: none;
+}
+
+.aside-bar__item:not(last-child) {
+  margin-bottom: 10px;
+}
+
+.aside-bar__item a {
+  font-size: 24px;
+  color: var(--c-accent);
+  transition: 0.3s;
+}
+
+.aside-bar__item a:hover {
+  color: var(--c-dark);
+  transition: 0.3s;
+}
+
+.main-content__address-book {
+  position: relative;
+  width: 100%;
+}
+
+.contacts__letter {
+  position:sticky;
+  top: 0;
+  padding: 5px 15px;
+  font-size: 28px;
+  background: var(--c-main);
+  color: var(--c-light);
+}
+
+.contacts__letter:not(last-child) {
+  margin-bottom: 15px;
+}
+
+.contacts__list {
+  list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contacts__item {
+  font-size: 28px;
+}
+
+.contacts__list:not(last-child) {
+  margin-bottom: 20px;
+}
+
+.top-button {
+  position: fixed;
+  top: 85%;
+}
+
+.top-button__content{
+  border: none;
+}
+
+.top-button__content a{
+  padding: 5px;
+  font-size: 28px;
+  text-decoration: none;
+  color: var(--c-light);
+  background: var(--c-button-color);
+  transition: 0.3s;
+}
+
+.top-button a::after {
+  content: " \2934";
+}
+
+.top-button a:hover {
+  color: black;
+  transition: 0.3s;
+}
+
+.page-footer {
+  padding: 10px 20px;
+  background: var(--c-main);
+}
+
+.page-footer__text {
+  color: var(--c-light);
+  font-size: 24px;
+  text-align: center;
+}
+
+
+    
