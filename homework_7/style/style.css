@@ -1,0 +1,257 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #1B2473;
+  --form-main: #FFFFFF;
+  --button-blue: #1A226B;
+  --main-gray: #787878;
+  --light-gray: #CCCCCC;
+  --link-blue: #0969da;
+  --link-hover: #1a226bd2;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  place-items: center;
+  background-color: var(--background-color);
+}
+
+/* ------------------------------------------ */
+
+h1 {
+  font-size: 3.125rem;
+}
+
+input {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--main-gray);
+}
+
+span {
+  font-size: 0.875rem;
+  color: var(--main-gray);
+}
+
+a {
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: var(--link-blue);
+}
+
+a:hover {
+  color: var(--link-hover);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* ------------------ */
+
+.container {
+  max-width: 1440px;
+  margin:auto;
+  padding: 0 30px;
+}
+
+.container__inner {
+  background-color: var(--form-main);
+  width: 100%;
+  max-width: 600px;
+  margin-top: 80px;
+  padding: 22px 45px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 10px #00000040;
+}
+
+/* ---------------------- */
+
+.entry-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.entry-form__title-text {
+  color: var(--main-gray);
+}
+
+.entry-form__body {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px; 
+}
+
+/* ---------------------- */
+
+.entry-form__email-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--main-gray);
+  padding-left: 0.5rem;
+}
+
+.entry-form__email-input {
+  width: 100%;
+  padding: 0 5px 0 13px;
+  border: 2px solid var(--main-gray);
+  border-radius: 10px;
+}
+
+.entry-form__email-input::placeholder {
+  color: var(--light-gray);
+}
+
+.entry-form__email-input:focus {
+  box-shadow: inset 0px 0px 4px 0px #00000052;
+}
+
+/* ---------------------- */
+
+.entry-form__password {
+  padding: 10px 0;
+}  
+
+.entry-form__password-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--main-gray);
+  padding-left: 0.5rem;
+}
+
+.entry-form__password-input {
+  width: 100%;
+  padding: 0 5px 0 13px;
+  border: 2px solid var(--main-gray);
+  border-radius: 10px;
+}
+
+.entry-form__password-input::placeholder {
+  color: var(--light-gray)
+}
+
+.entry-form__password-input:focus {
+  box-shadow: inset 0px 0px 4px 0px #00000052;
+}
+
+/* ---------------------- */
+
+.entry-form__password-restore {
+  padding-left: 0.5rem;
+}
+
+/* ---------------------- */
+
+.entry-form__checkbox {
+  position: relative;
+}
+
+.entry-form__checkbox-input {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+}
+
+.entry-form__checkbox-text {
+  margin: 0.25rem 0.25rem 0.25rem 2rem;
+}
+
+.entry-form__checkbox-text::before {
+  content: "";
+  position: absolute;
+  top:-5px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--main-gray);
+  border-radius: 7px;
+}
+
+.entry-form__checkbox-text::after {
+  content: "";
+  background-image: url(../img/navy-tick.png);
+  position: absolute;
+  top: -5px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-size: 100% 100%;
+  opacity: 0;
+}
+
+.entry-form__checkbox-input:checked + .entry-form__checkbox-text::after {
+  opacity: 1;
+}
+
+/* ---------------------- */
+
+.entry-form__button {
+  padding-top: 3.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.entry-form__submit {
+  width: 180px;
+  height: 50px;
+  border: none;
+  line-height: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--form-main);
+  background-color: var(--button-blue);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.entry-form__submit:hover {
+  background-color: var(--link-hover);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* ---------------------- */
+
+.entry-form__sign-up {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+/* ----------------------- Mobile screen--------------------------- */
+
+@media screen and (max-width: 768.98px) {
+
+  .container {
+    max-width: 768.98px;
+    padding: 0 20px;
+  }
+
+  .container__inner {
+    max-width: 700px;
+    min-height: 730px;
+    margin-top: 20px;
+  }  
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  input {
+    font-size: 1.6rem;
+  }
+  
+  span {
+    font-size: 0.875rem;
+  }
+  
+  a {
+    font-size: 0.875rem;
+  }
+}

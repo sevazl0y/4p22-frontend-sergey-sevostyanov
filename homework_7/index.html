@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Войти в личный кабинет</title>
+  <link rel="shortcut icon" type="image/png" href="img/open-door-favicon.png">
+  <link rel="stylesheet" type="text/css" href="./style/style.css">
+</head>
+<body>
+    <div class="container">
+      <div class="container__inner entry-form">
+        <div class="entry-form__title">
+          <h1 class="entry-form__title-text">Вход</h1>
+        </div>
+        <form class="entry-form__body">
+          <div class="entry-form__email">
+            <label class="entry-form__email-block">
+              <span class="entry-form__email-title">Email</span>
+              <input class="entry-form__email-input input-data" name="email" type="email" placeholder="Введите email">
+            </label>
+          </div>
+          <div class="entry-form__password">
+            <label class="entry-form__password-block">
+              <span class="entry-form__password-title">Пароль</span>
+              <input class="entry-form__password-input input-data" name="password" type="password" placeholder="Введите пароль">
+              <a class="entry-form__password-restore">Забыли пароль?</a>
+            </label>
+          </div>
+          <div class="entry-form__checkbox">
+            <label class="entry-form__checkbox-block">
+              <input class="entry-form__checkbox-input" name="subscription" type="checkbox">
+              <span class="entry-form__checkbox-text">Я согласен получать обновления на почту</span>
+            </label>
+          </div>
+          <div class="entry-form__button">
+            <button class="entry-form__submit">Войти</button>
+          </div>
+        </form>
+        <div class="entry-form__sign-up">
+          <span class="entry-form__sign-up-text"> Еще нет аккаунта?&nbsp;<a href="">Зарегистрируйтесь</a></span>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
