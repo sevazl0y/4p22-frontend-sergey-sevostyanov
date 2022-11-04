@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="container__inner">
+      <div class="calculator__title">
+        <h1 class="calculator__heading">Quick maths with Peepo</h1>
+      </div>
+      <form class="calculator__form">
+        <label class="calculator__item input">
+          <input class="input__control" type="text" id="data-js-number1" placeholder="Type first number">
+        </label>
+        <label class="calculator__item input">
+          <input class="input__field"  id="data-js-operation" placeholder="Add operation sign (+, -, /, *)">
+        </label>
+        <label class="calculator__item input">
+          <input class="input__field" type="text" id="data-js-number2" placeholder="Type second number">
+        </label>
+        <div class="calculator__result-block">
+          <p class="calculator__output-text" id="output"></p>
+        </div>
+      </form>
+      <button class="calculator__result-button" id="calc-button">Calculate</button>
+      <img class="calculator__emote" src="img/peepo-main.png" width="200px" height="159px" loading="lazy" alt="peepo g emote">
+    </div>
+  </div>
+  <script src="script/script.js"></script>
+</body>
+</html>
