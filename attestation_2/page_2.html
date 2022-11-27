@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Промежуточная аттестация</title>
+  <link rel="stylesheet" type="text/css" href="./style/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner container">
+      <div class="header__start">
+        <a class="header__logo-link" href="/">
+          <img  class="header__logo" src="./img/logo_1.svg" width="222" height="50" loading="lazy" alt="Иннополис лого">
+        </a>
+        <h1 class="header__heading">PCS Frontend</h1>
+      </div>
+      <nav class="header__nav-bar">
+        <div class="header__nav-item">
+          <a href="./page_2.html" class="header__link header__link_active">Регистрация</a>
+        </div>
+              <div class="header__nav-item">
+          <a href="./index.html" class="header__link">Вход</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="content">
+    <section class="content__inner container">
+      <div class="form">
+        <div class="form__title">
+          <h2 class="form__heading">Регистрация</h2>
+        </div>
+        <form class="form__body" data-js-form>
+          <div class="form__item">
+            <div class="input" data-js-input='{"type": "email"}'>
+              <label class="input__label input__label_required" for="email" >Email</label>
+              <span class="input__error" data-js-input-error></span>
+              <input class="input__control" type="text" name="email" id="email" placeholder="Введите email" data-js-input-control>
+            </div>
+          </div>
+          <div class="form__item">
+            <div class="input" data-js-input='{"type": "password", "passwordRepeatInputID": "password-repeat"}'>
+              <label class="input__label input__label_required" for="password">Пароль</label>
+              <span class="input__error" data-js-input-error></span>
+              <input class="input__control" type="password" name="password" id="password-main" placeholder="Введите пароль" data-js-input-control>
+            </div>
+          </div>
+          <div class="form__item">
+            <div class="input" data-js-input='{"type": "password-repeat","passwordInputID" : "password-main"}'>
+              <label class="input__label input__label_required" for="password-repeat" >Подтверждение пароля</label>
+              <span class="input__error" data-js-input-error></span>
+              <input class="input__control" type="password" name="password-repeat" id="password-repeat" placeholder="Подтвердите пароль" data-js-input-control>
+            </div>
+          </div>
+          <div class="form__item">
+            <div class="radio">
+              <span class="radio__heading">Пол</span>
+              <label class="radio__label_male radio__item">
+                <input class="radio__control_male visually-hidden" type="radio" name="radio" value="male">
+                <span class="radio__emulator_male"></span>
+                Мужчина
+              </label>
+              <label class="radio__label_female radio__item">
+                <input class="radio__control_female visually-hidden" type="radio" name="radio" value="female">
+                <span class="radio__emulator_female"></span>
+                Женщина
+              </label>
+            </div>
+          </div>  
+          <div class="form__item">
+            <div class="input">
+              <label class="input__label" for="textarea">О себе</label>
+              <textarea class="input__control" name="textarea" id="textarea" placeholder="Расскажите о себе..."></textarea>
+            </div>
+          </div>
+          <div class="form__item">
+              <label class="checkbox">
+                <input class="checkbox__control visually-hidden" type="checkbox" name="subscription-accept">
+                <span class="checkbox__emulator"></span>
+                <span class="checkbox__text">Я согласен получать обновления на почту</span>
+              </label>
+          </div>
+          <button class="form__submit button" type="submit">Регистрация</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="./script/script.js"></script>
+</body>
+</html>
